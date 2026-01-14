@@ -1,0 +1,3 @@
+D:/coding app/code/MyMinecraft/build/CMakeFiles/MyMinecraft.dir
+D:/coding app/code/MyMinecraft/build/CMakeFiles/edit_cache.dir
+D:/coding app/code/MyMinecraft/build/CMakeFiles/rebuild_cache.dir
