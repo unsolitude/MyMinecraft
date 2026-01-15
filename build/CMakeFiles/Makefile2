@@ -84,12 +84,12 @@ clean: CMakeFiles/MyMinecraft.dir/clean
 CMakeFiles/MyMinecraft.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMinecraft.dir\build.make CMakeFiles/MyMinecraft.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMinecraft.dir\build.make CMakeFiles/MyMinecraft.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="D:\coding app\code\MyMinecraft\build\CMakeFiles" --progress-num=1,2,3 "Built target MyMinecraft"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="D:\coding app\code\MyMinecraft\build\CMakeFiles" --progress-num=1,2,3,4 "Built target MyMinecraft"
 .PHONY : CMakeFiles/MyMinecraft.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/MyMinecraft.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "D:\coding app\code\MyMinecraft\build\CMakeFiles" 3
+	$(CMAKE_COMMAND) -E cmake_progress_start "D:\coding app\code\MyMinecraft\build\CMakeFiles" 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/MyMinecraft.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "D:\coding app\code\MyMinecraft\build\CMakeFiles" 0
 .PHONY : CMakeFiles/MyMinecraft.dir/rule
@@ -101,7 +101,7 @@ MyMinecraft: CMakeFiles/MyMinecraft.dir/rule
 # codegen rule for target.
 CMakeFiles/MyMinecraft.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMinecraft.dir\build.make CMakeFiles/MyMinecraft.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="D:\coding app\code\MyMinecraft\build\CMakeFiles" --progress-num=1,2,3 "Finished codegen for target MyMinecraft"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="D:\coding app\code\MyMinecraft\build\CMakeFiles" --progress-num=1,2,3,4 "Finished codegen for target MyMinecraft"
 .PHONY : CMakeFiles/MyMinecraft.dir/codegen
 
 # clean rule for target.
