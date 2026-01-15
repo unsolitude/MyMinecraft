@@ -613,6 +613,8 @@ CMakeFiles/MyMinecraft.dir/src/main.cpp.obj
  D:/coding app/mingw64/x86_64-w64-mingw32/include/vadefs.h
  D:/coding app/mingw64/x86_64-w64-mingw32/include/wchar.h
  D:/coding app/mingw64/x86_64-w64-mingw32/include/wctype.h
+ D:/coding app/code/MyMinecraft/src/Camera.h
+ D:/coding app/code/MyMinecraft/src/Chunk.h
  D:/coding app/code/MyMinecraft/src/Shader.h
 
 CMakeFiles/MyMinecraft.dir/src/stb_image.cpp.obj

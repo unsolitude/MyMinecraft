@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/MyMinecraft.dir/src/main.cpp.obj.d"
   "CMakeFiles/MyMinecraft.dir/src/stb_image.cpp.obj"
   "CMakeFiles/MyMinecraft.dir/src/stb_image.cpp.obj.d"
+  "CMakeFiles/MyMinecraft.dir/src/stb_perlin.cpp.obj"
+  "CMakeFiles/MyMinecraft.dir/src/stb_perlin.cpp.obj.d"
   "MyMinecraft.exe"
   "MyMinecraft.exe.manifest"
   "MyMinecraft.pdb"

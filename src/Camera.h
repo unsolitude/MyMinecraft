@@ -16,7 +16,8 @@ enum Camera_Movement {
 // 默认摄像机参数
 const float YAW         = -90.0f;
 const float PITCH       =  0.0f;
-const float SPEED       =  2.5f;
+const float SPEED       =  10.0f;  // 提高基础速度
+const float SPRINT_MULTIPLIER = 2.5f; // 冲刺倍率
 const float SENSITIVITY =  0.1f;
 const float ZOOM        =  45.0f;
 
@@ -80,9 +81,10 @@ public:
     }
 
     // 处理键盘输入
-    void ProcessKeyboard(Camera_Movement direction, float deltaTime)
+    void ProcessKeyboard(Camera_Movement direction, float deltaTime, bool sprinting = false)
     {
-        float velocity = MovementSpeed * deltaTime;
+        float speed = sprinting ? MovementSpeed * SPRINT_MULTIPLIER : MovementSpeed;
+        float velocity = speed * deltaTime;
         if (direction == FORWARD)
             Position += Front * velocity;
         if (direction == BACKWARD)

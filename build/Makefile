@@ -200,6 +200,30 @@ src/stb_image.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMinecraft.dir\build.make CMakeFiles/MyMinecraft.dir/src/stb_image.cpp.s
 .PHONY : src/stb_image.cpp.s
 
+src/stb_perlin.obj: src/stb_perlin.cpp.obj
+.PHONY : src/stb_perlin.obj
+
+# target to build an object file
+src/stb_perlin.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMinecraft.dir\build.make CMakeFiles/MyMinecraft.dir/src/stb_perlin.cpp.obj
+.PHONY : src/stb_perlin.cpp.obj
+
+src/stb_perlin.i: src/stb_perlin.cpp.i
+.PHONY : src/stb_perlin.i
+
+# target to preprocess a source file
+src/stb_perlin.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMinecraft.dir\build.make CMakeFiles/MyMinecraft.dir/src/stb_perlin.cpp.i
+.PHONY : src/stb_perlin.cpp.i
+
+src/stb_perlin.s: src/stb_perlin.cpp.s
+.PHONY : src/stb_perlin.s
+
+# target to generate assembly for a file
+src/stb_perlin.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMinecraft.dir\build.make CMakeFiles/MyMinecraft.dir/src/stb_perlin.cpp.s
+.PHONY : src/stb_perlin.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -218,6 +242,9 @@ help:
 	@echo ... src/stb_image.obj
 	@echo ... src/stb_image.i
 	@echo ... src/stb_image.s
+	@echo ... src/stb_perlin.obj
+	@echo ... src/stb_perlin.i
+	@echo ... src/stb_perlin.s
 .PHONY : help
 
 

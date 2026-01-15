@@ -611,6 +611,8 @@ CMakeFiles/MyMinecraft.dir/src/main.cpp.obj: D:/coding\ app/code/MyMinecraft/src
   D:/coding\ app/mingw64/x86_64-w64-mingw32/include/vadefs.h \
   D:/coding\ app/mingw64/x86_64-w64-mingw32/include/wchar.h \
   D:/coding\ app/mingw64/x86_64-w64-mingw32/include/wctype.h \
+  D:/coding\ app/code/MyMinecraft/src/Camera.h \
+  D:/coding\ app/code/MyMinecraft/src/Chunk.h \
   D:/coding\ app/code/MyMinecraft/src/Shader.h
 
 CMakeFiles/MyMinecraft.dir/src/stb_image.cpp.obj: D:/coding\ app/code/MyMinecraft/src/stb_image.cpp \
@@ -1486,6 +1488,8 @@ D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/hash_by
 
 D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_ios.tcc:
 
+D:/coding\ app/code/MyMinecraft/src/Camera.h:
+
 D:/coding\ app/code/MyMinecraft/dependencies/include/glm/ext/matrix_clip_space.inl:
 
 D:/coding\ app/code/MyMinecraft/dependencies/include/glm/ext/vector_double2.hpp:
@@ -1853,6 +1857,8 @@ D:/coding\ app/mingw64/x86_64-w64-mingw32/include/sys/types.h:
 D:/coding\ app/mingw64/x86_64-w64-mingw32/include/wchar.h:
 
 D:/coding\ app/mingw64/x86_64-w64-mingw32/include/wctype.h:
+
+D:/coding\ app/code/MyMinecraft/src/Chunk.h:
 
 D:/coding\ app/code/MyMinecraft/src/Shader.h:
 

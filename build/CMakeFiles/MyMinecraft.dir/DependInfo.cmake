@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/coding app/code/MyMinecraft/src/glad.c" "CMakeFiles/MyMinecraft.dir/src/glad.c.obj" "gcc" "CMakeFiles/MyMinecraft.dir/src/glad.c.obj.d"
   "D:/coding app/code/MyMinecraft/src/main.cpp" "CMakeFiles/MyMinecraft.dir/src/main.cpp.obj" "gcc" "CMakeFiles/MyMinecraft.dir/src/main.cpp.obj.d"
   "D:/coding app/code/MyMinecraft/src/stb_image.cpp" "CMakeFiles/MyMinecraft.dir/src/stb_image.cpp.obj" "gcc" "CMakeFiles/MyMinecraft.dir/src/stb_image.cpp.obj.d"
+  "D:/coding app/code/MyMinecraft/src/stb_perlin.cpp" "CMakeFiles/MyMinecraft.dir/src/stb_perlin.cpp.obj" "gcc" "CMakeFiles/MyMinecraft.dir/src/stb_perlin.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
