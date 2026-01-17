@@ -422,6 +422,7 @@ CMakeFiles/MyMinecraft.dir/src/main.cpp.obj: D:/coding\ app/code/MyMinecraft/src
   D:/coding\ app/code/MyMinecraft/dependencies/include/glm/vec4.hpp \
   D:/coding\ app/code/MyMinecraft/dependencies/include/glm/vector_relational.hpp \
   D:/coding\ app/code/MyMinecraft/dependencies/include/stb_image.h \
+  D:/coding\ app/code/MyMinecraft/dependencies/include/stb_perlin.h \
   D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/limits.h \
   D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/syslimits.h \
   D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/array \
@@ -481,9 +482,12 @@ CMakeFiles/MyMinecraft.dir/src/main.cpp.obj: D:/coding\ app/code/MyMinecraft/src
   D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator.h \
   D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator_base_funcs.h \
   D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator_base_types.h \
+  D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_map.h \
+  D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_multimap.h \
   D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_pair.h \
   D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_relops.h \
   D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_tempbuf.h \
+  D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_tree.h \
   D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_uninitialized.h \
   D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_vector.h \
   D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/streambuf.tcc \
@@ -526,6 +530,7 @@ CMakeFiles/MyMinecraft.dir/src/main.cpp.obj: D:/coding\ app/code/MyMinecraft/src
   D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream \
   D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/istream \
   D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/limits \
+  D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/map \
   D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/new \
   D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/optional \
   D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream \
@@ -613,6 +618,7 @@ CMakeFiles/MyMinecraft.dir/src/main.cpp.obj: D:/coding\ app/code/MyMinecraft/src
   D:/coding\ app/mingw64/x86_64-w64-mingw32/include/wctype.h \
   D:/coding\ app/code/MyMinecraft/src/Camera.h \
   D:/coding\ app/code/MyMinecraft/src/Chunk.h \
+  D:/coding\ app/code/MyMinecraft/src/Player.h \
   D:/coding\ app/code/MyMinecraft/src/Shader.h
 
 CMakeFiles/MyMinecraft.dir/src/stb_image.cpp.obj: D:/coding\ app/code/MyMinecraft/src/stb_image.cpp \
@@ -691,8 +697,61 @@ CMakeFiles/MyMinecraft.dir/src/stb_image.cpp.obj: D:/coding\ app/code/MyMinecraf
   D:/coding\ app/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
   D:/coding\ app/mingw64/x86_64-w64-mingw32/include/vadefs.h
 
+CMakeFiles/MyMinecraft.dir/src/stb_perlin.cpp.obj: D:/coding\ app/code/MyMinecraft/src/stb_perlin.cpp \
+  D:/coding\ app/code/MyMinecraft/dependencies/include/stb_perlin.h \
+  D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/limits.h \
+  D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/syslimits.h \
+  D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/concept_check.h \
+  D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cpp_type_traits.h \
+  D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception_defines.h \
+  D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/functexcept.h \
+  D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/move.h \
+  D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/predefined_ops.h \
+  D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ptr_traits.h \
+  D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/specfun.h \
+  D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/std_abs.h \
+  D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_algobase.h \
+  D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator.h \
+  D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator_base_funcs.h \
+  D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator_base_types.h \
+  D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_pair.h \
+  D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cmath \
+  D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/debug/assertions.h \
+  D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/debug/debug.h \
+  D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/numeric_traits.h \
+  D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/type_traits.h \
+  D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/limits \
+  D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/math.h \
+  D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/stdlib.h \
+  D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/bessel_function.tcc \
+  D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/beta_function.tcc \
+  D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/ell_integral.tcc \
+  D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/exp_integral.tcc \
+  D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/gamma.tcc \
+  D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/hypergeometric.tcc \
+  D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/legendre_function.tcc \
+  D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/modified_bessel_func.tcc \
+  D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/poly_hermite.tcc \
+  D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/poly_laguerre.tcc \
+  D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/riemann_zeta.tcc \
+  D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/special_function_util.h \
+  D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/type_traits \
+  D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
+  D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
+  D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
+  D:/coding\ app/mingw64/x86_64-w64-mingw32/include/_mingw.h \
+  D:/coding\ app/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
+  D:/coding\ app/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
+  D:/coding\ app/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
+  D:/coding\ app/mingw64/x86_64-w64-mingw32/include/limits.h \
+  D:/coding\ app/mingw64/x86_64-w64-mingw32/include/malloc.h \
+  D:/coding\ app/mingw64/x86_64-w64-mingw32/include/math.h \
+  D:/coding\ app/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+  D:/coding\ app/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_directx.h \
+  D:/coding\ app/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+  D:/coding\ app/mingw64/x86_64-w64-mingw32/include/stdlib.h \
+  D:/coding\ app/mingw64/x86_64-w64-mingw32/include/vadefs.h
 
-D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/type_traits.h:
 
 D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/f16cintrin.h:
 
@@ -731,6 +790,8 @@ D:/coding\ app/mingw64/x86_64-w64-mingw32/include/ddeml.h:
 D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/clflushoptintrin.h:
 
 D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/syslimits.h:
+
+D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_multimap.h:
 
 D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vbmi2vlintrin.h:
 
@@ -806,9 +867,9 @@ D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cfloat:
 
 D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vbmiintrin.h:
 
-D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vbmivlintrin.h:
-
 D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/numeric_traits.h:
+
+D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vbmivlintrin.h:
 
 D:/coding\ app/mingw64/x86_64-w64-mingw32/include/reason.h:
 
@@ -1084,8 +1145,6 @@ D:/coding\ app/mingw64/x86_64-w64-mingw32/include/oleauto.h:
 
 D:/coding\ app/mingw64/x86_64-w64-mingw32/include/imm.h:
 
-D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/new_allocator.h:
-
 D:/coding\ app/mingw64/x86_64-w64-mingw32/include/inaddr.h:
 
 D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_bvector.h:
@@ -1358,6 +1417,8 @@ D:/coding\ app/mingw64/x86_64-w64-mingw32/include/winspool.h:
 
 D:/coding\ app/mingw64/x86_64-w64-mingw32/include/winuser.h:
 
+D:/coding\ app/code/MyMinecraft/dependencies/include/stb_perlin.h:
+
 D:/coding\ app/mingw64/x86_64-w64-mingw32/include/winver.h:
 
 D:/coding\ app/mingw64/x86_64-w64-mingw32/include/wnnc.h:
@@ -1534,9 +1595,9 @@ D:/coding\ app/code/MyMinecraft/dependencies/include/glm/ext/matrix_float2x2_pre
 
 D:/coding\ app/mingw64/x86_64-w64-mingw32/include/sys/timeb.h:
 
-D:/coding\ app/code/MyMinecraft/dependencies/include/glm/ext/matrix_float2x3.hpp:
-
 D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/string_conversions.h:
+
+D:/coding\ app/code/MyMinecraft/dependencies/include/glm/ext/matrix_float2x3.hpp:
 
 D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/char_traits.h:
 
@@ -1555,6 +1616,8 @@ D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/string_
 D:/coding\ app/code/MyMinecraft/dependencies/include/glm/ext/matrix_float4x2.hpp:
 
 D:/coding\ app/code/MyMinecraft/dependencies/include/glm/ext/vector_uint2.hpp:
+
+D:/coding\ app/code/MyMinecraft/src/Player.h:
 
 D:/coding\ app/code/MyMinecraft/dependencies/include/glm/integer.hpp:
 
@@ -1623,6 +1686,8 @@ D:/coding\ app/code/MyMinecraft/dependencies/include/glm/ext/vector_float2.hpp:
 D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_ios.h:
 
 D:/coding\ app/code/MyMinecraft/dependencies/include/glm/ext/vector_float3.hpp:
+
+D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/map:
 
 D:/coding\ app/code/MyMinecraft/dependencies/include/glm/ext/vector_float3_precision.hpp:
 
@@ -1744,9 +1809,13 @@ D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string:
 
 D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator_base_funcs.h:
 
+D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_map.h:
+
 D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_relops.h:
 
 D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_tempbuf.h:
+
+D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_tree.h:
 
 D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/streambuf.tcc:
 
@@ -1773,6 +1842,10 @@ D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cwchar:
 D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/exception:
 
 D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/aligned_buffer.h:
+
+D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/new_allocator.h:
+
+D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/type_traits.h:
 
 D:/coding\ app/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/functional:
 
@@ -1863,3 +1936,5 @@ D:/coding\ app/code/MyMinecraft/src/Chunk.h:
 D:/coding\ app/code/MyMinecraft/src/Shader.h:
 
 D:/coding\ app/code/MyMinecraft/src/stb_image.cpp:
+
+D:/coding\ app/code/MyMinecraft/src/stb_perlin.cpp:

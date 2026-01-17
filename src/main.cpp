@@ -6,13 +6,17 @@
 #include "Shader.h"
 #include "Camera.h"
 #include "Chunk.h"
+#include "Player.h"
 #include <stb_image.h>
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 
-// 摄像机对象（调整位置以便看到整个区块）
-Camera camera(glm::vec3(20.0f, 15.0f, 25.0f));
+// 摄像机对象
+Camera camera(glm::vec3(0.0f, 20.0f, 0.0f));
+
+// 玩家对象（初始位置）
+Player player(glm::vec3(0.0f, 15.0f, 0.0f)); // 初始位置设在chunk顶部
 
 // 时间相关变量
 float deltaTime = 0.0f; // 当前帧与上一帧的时间差
@@ -49,18 +53,41 @@ void processInput(GLFWwindow *window)
     if(glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
         glfwSetWindowShouldClose(window, true);
     
-    // 检测Shift键是否按下（冲刺）
-    bool sprinting = (glfwGetKey(window, GLFW_KEY_LEFT_SHIFT) == GLFW_PRESS) ||
-                     (glfwGetKey(window, GLFW_KEY_RIGHT_SHIFT) == GLFW_PRESS);
+    // 计算移动速度
+    float speed = 6.45f; // 行走速度（原先4.3的1.5倍）
+    if (glfwGetKey(window, GLFW_KEY_LEFT_SHIFT) == GLFW_PRESS ||
+        glfwGetKey(window, GLFW_KEY_RIGHT_SHIFT) == GLFW_PRESS) {
+        speed = 12.9f; // 冲刺速度（行走速度的2倍）
+    }
     
+    // 计算移动方向（基于摄像机朝向，但忽略Y轴）
+    glm::vec3 front = camera.Front;
+    front.y = 0.0f;
+    front = glm::normalize(front);
+    glm::vec3 right = camera.Right;
+    right.y = 0.0f;
+    right = glm::normalize(right);
+    
+    glm::vec3 moveDir(0.0f);
     if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
-        camera.ProcessKeyboard(FORWARD, deltaTime, sprinting);
+        moveDir += front;
     if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS)
-        camera.ProcessKeyboard(BACKWARD, deltaTime, sprinting);
+        moveDir -= front;
     if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS)
-        camera.ProcessKeyboard(LEFT, deltaTime, sprinting);
+        moveDir -= right;
     if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
-        camera.ProcessKeyboard(RIGHT, deltaTime, sprinting);
+        moveDir += right;
+    
+    if (glm::length(moveDir) > 0.0f) {
+        moveDir = glm::normalize(moveDir);
+        player.move(moveDir, speed);
+    } else {
+        player.move(glm::vec3(0.0f), 0.0f);
+    }
+    
+    // 跳跃
+    if (glfwGetKey(window, GLFW_KEY_SPACE) == GLFW_PRESS)
+        player.jump();
 }
 
 int main() {
@@ -140,6 +167,9 @@ int main() {
     // 启用深度测试
     glEnable(GL_DEPTH_TEST);
 
+    // 等待区块加载完成的标志
+    bool chunksLoaded = true;  // 区块已在主循环前生成完成
+
     // 渲染循环
     while (!glfwWindowShouldClose(window)) {
 
@@ -149,6 +179,15 @@ int main() {
         lastFrame = currentFrame;
 
         processInput(window);
+        
+        // 只有在区块加载完成后才进行物理更新
+        if (chunksLoaded) {
+            player.update(deltaTime, chunks);
+        }
+        
+        // 更新摄像机位置到玩家眼睛位置
+        camera.Position = player.getEyePosition();
+        
         glClearColor(0.5f, 0.7f, 1.0f, 1.0f); // 天空蓝色背景
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
         

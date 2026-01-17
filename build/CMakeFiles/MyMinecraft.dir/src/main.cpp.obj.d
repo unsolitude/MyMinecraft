@@ -346,6 +346,7 @@ CMakeFiles/MyMinecraft.dir/src/main.cpp.obj: \
  D:/coding\ app/code/MyMinecraft/dependencies/include/glm/gtc/matrix_transform.inl \
  D:\coding\ app\code\MyMinecraft\src\Chunk.h \
  D:/coding\ app/code/MyMinecraft/dependencies/include/stb_perlin.h \
+ D:\coding\ app\code\MyMinecraft\src\Player.h \
  D:/coding\ app/code/MyMinecraft/dependencies/include/stb_image.h \
  D:/coding\ app/code/MyMinecraft/dependencies/include/glm/gtc/type_ptr.hpp \
  D:/coding\ app/code/MyMinecraft/dependencies/include/glm/gtc/quaternion.hpp \
